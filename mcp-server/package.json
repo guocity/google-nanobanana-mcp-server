@@ -1,5 +1,5 @@
 {
-  "name": "nanobanana-mcp",
+  "name": "nanobanana-mcp-server",
   "version": "1.0.0",
   "type": "module",
   "description": "MCP server for Nano Banana - Gemini 2.5 Flash Image generation, editing, and manipulation",
