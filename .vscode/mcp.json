@@ -1,0 +1,12 @@
+{
+	"servers": {
+		"nanobanana": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"/Users/leon/Documents/github/nanobanana/mcp-server"
+			]
+		}
+	},
+	"inputs": []
+}

@@ -2,6 +2,8 @@
 
 A professional Gemini CLI extension for generating and manipulating images using the **Gemini 2.5 Flash Image** model (Nano Banana).
 
+**Also available as an MCP Server!** Install `nanobanana-mcp` from npm to use with Claude Desktop and other MCP clients. See [mcp-server/README.md](mcp-server/README.md) for details.
+
 ## ✨ Features
 
 - **🎨 Text-to-Image Generation**: Create stunning images from descriptive prompts

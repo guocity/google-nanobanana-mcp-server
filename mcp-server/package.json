@@ -1,16 +1,44 @@
 {
-  "name": "nanobanana-mcp-server",
+  "name": "nanobanana-mcp",
   "version": "1.0.0",
   "type": "module",
-  "description": "MCP server for Nano Banana (Gemini 2.5 Flash Image) extension",
+  "description": "MCP server for Nano Banana - Gemini 2.5 Flash Image generation, editing, and manipulation",
   "main": "dist/index.js",
+  "bin": {
+    "nanobanana-mcp": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gemini-cli-extensions/nanobanana.git",
+    "directory": "mcp-server"
+  },
+  "homepage": "https://github.com/gemini-cli-extensions/nanobanana#readme",
+  "bugs": {
+    "url": "https://github.com/gemini-cli-extensions/nanobanana/issues"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Gemini CLI Extensions"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gemini",
+    "ai",
+    "image-generation",
+    "image-editing",
+    "image-restoration",
+    "nano-banana",
+    "generative-ai"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
     "prepare": "npm run build",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0",
+    "prepublishOnly": "npm run build && npm run typecheck"
   },
   "dependencies": {
     "@google/genai": "^1.17.0",
@@ -22,5 +50,10 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
 }
